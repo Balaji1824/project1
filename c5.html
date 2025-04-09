@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Attributes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    pre, code {
+      background-color: #f1f1f1;
+      padding: 10px;
+      display: block;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 0.9em;
+      color: #777;
+    }
+    .button {
+      border: 2px solid #4CAF50;
+      color: #4CAF50;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+    .button:hover {
+      background-color: #4CAF50;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML Attributes</h1>
+  </header>
+  <main>
+    <p>HTML attributes provide additional information about HTML elements.</p>
+
+    <ul>
+      <li>All HTML elements can have attributes</li>
+      <li>Attributes provide additional information about elements</li>
+      <li>Attributes are always specified in the start tag</li>
+      <li>Attributes usually come in name/value pairs like: name="value"</li>
+    </ul>
+
+    <h2>The href Attribute</h2>
+    <p>The <code>&lt;a&gt;</code> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:</p>
+    <pre><code>&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;/a&gt;</code></pre>
+
+    <h2>The src Attribute</h2>
+    <p>The <code>&lt;img&gt;</code> tag is used to embed an image. The src attribute specifies the image path:</p>
+    <pre><code>&lt;img src="img_girl.jpg"&gt;</code></pre>
+
+    <h3>URL Types:</h3>
+    <ul>
+      <li><strong>Absolute URL:</strong> <code>src="https://www.w3schools.com/images/img_girl.jpg"</code></li>
+      <li><strong>Relative URL:</strong> <code>src="img_girl.jpg"</code> or <code>src="/images/img_girl.jpg"</code></li>
+    </ul>
+
+    <p><strong>Tip:</strong> Prefer using relative URLs—they won't break if your domain changes.</p>
+
+    <h2>The width and height Attributes</h2>
+    <pre><code>&lt;img src="img_girl.jpg" width="500" height="600"&gt;</code></pre>
+
+    <h2>The alt Attribute</h2>
+    <pre><code>&lt;img src="img_girl.jpg" alt="Girl with a jacket"&gt;</code></pre>
+    <p>If the image can't load, the alt text is shown.</p>
+    <pre><code>&lt;img src="img_typo.jpg" alt="Girl with a jacket"&gt;</code></pre>
+
+    <h2>The style Attribute</h2>
+    <pre><code>&lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;</code></pre>
+
+    <h2>The lang Attribute</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <p>With country code:</p>
+    <pre><code>&lt;html lang="en-US"&gt;</code></pre>
+
+    <h2>The title Attribute</h2>
+    <pre><code>&lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+    <h2>Use Lowercase and Quoted Attribute Values</h2>
+    <p>Recommended:</p>
+    <pre><code>&lt;a href="https://www.w3schools.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;</code></pre>
+    <p>Not recommended:</p>
+    <pre><code>&lt;a href=https://www.w3schools.com/html/&gt;Visit our HTML tutorial&lt;/a&gt;</code></pre>
+
+    <h2>Single vs Double Quotes</h2>
+    <pre><code>&lt;p title='John "ShotGun" Nelson'&gt;
+&lt;p title="John 'ShotGun' Nelson"&gt;</code></pre>
+
+    <h2>Summary</h2>
+    <ul>
+      <li>All HTML elements can have attributes</li>
+      <li><code>href</code> in <code>&lt;a&gt;</code> links to a URL</li>
+      <li><code>src</code> in <code>&lt;img&gt;</code> points to an image</li>
+      <li><code>width</code> and <code>height</code> control image size</li>
+      <li><code>alt</code> gives alternate image text</li>
+      <li><code>style</code> adds CSS styles</li>
+      <li><code>lang</code> declares page language</li>
+      <li><code>title</code> shows extra info as tooltip</li>
+    </ul>
+  </main>
+  <footer>
+    <a href="c4.html" class="button">&larr; Previous</a>
+    <a href="c6.html" class="button">Next &rarr;</a>
+  </footer>
+  <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="J1POj-Ll-bIBe4ATM6G7V";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+      </script>
+</body>
+</html>

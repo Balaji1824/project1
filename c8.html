@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Style Attribute</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    pre, code {
+      background-color: #f1f1f1;
+      padding: 10px;
+      display: block;
+      border-radius: 5px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 0.9em;
+      color: #777;
+    }
+    .button {
+      border: 2px solid #4CAF50;
+      color: #4CAF50;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+    .button:hover {
+      background-color: #4CAF50;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML Style Attribute</h1>
+  </header>
+  <main>
+    <h2>The HTML Style Attribute</h2>
+    <p>The HTML <code>style</code> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+
+    <h3>Example:</h3>
+    <pre><code>&lt;p style="color:red;"&gt;I am Red&lt;/p&gt;
+&lt;p style="color:blue;"&gt;I am Blue&lt;/p&gt;
+&lt;p style="font-size:300%;"&gt;I am Big&lt;/p&gt;</code></pre>
+
+    <h2>Syntax</h2>
+    <p>Setting the style of an HTML element can be done with the <code>style</code> attribute.</p>
+    <pre><code>&lt;tagname style="property:value;"&gt;</code></pre>
+    <p>The property is a CSS property. The value is a CSS value.</p>
+    <p><strong>You will learn more about CSS later in this tutorial.</strong></p>
+
+    <h2>Background Color</h2>
+    <p>The CSS <code>background-color</code> property defines the background color for an HTML element.</p>
+
+    <h3>Example - Set background color for the whole page:</h3>
+    <pre><code>&lt;body style="background-color:powderblue;"&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;</code></pre>
+
+    <h3>Example - Set background color for individual elements:</h3>
+    <pre><code>&lt;h1 style="background-color:powderblue;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="background-color:tomato;"&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+    <h2>Text Color</h2>
+    <p>The CSS <code>color</code> property defines the text color for an HTML element.</p>
+
+    <h3>Example:</h3>
+    <pre><code>&lt;h1 style="color:blue;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+    <h2>Fonts</h2>
+    <p>The CSS <code>font-family</code> property defines the font to be used for an HTML element.</p>
+
+    <h3>Example:</h3>
+    <pre><code>&lt;h1 style="font-family:verdana;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="font-family:courier;"&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+    <h2>Text Size</h2>
+    <p>The CSS <code>font-size</code> property defines the text size for an HTML element.</p>
+
+    <h3>Example:</h3>
+    <pre><code>&lt;h1 style="font-size:300%;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="font-size:160%;"&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+    <h2>Text Alignment</h2>
+    <p>The CSS <code>text-align</code> property defines the horizontal text alignment for an HTML element.</p>
+
+    <h3>Example:</h3>
+    <pre><code>&lt;h1 style="text-align:center;"&gt;Centered Heading&lt;/h1&gt;
+&lt;p style="text-align:center;"&gt;Centered paragraph.&lt;/p&gt;</code></pre>
+
+    <h2>Chapter Summary</h2>
+    <ul>
+      <li>Use the <code>style</code> attribute for styling HTML elements</li>
+      <li>Use <code>background-color</code> for background color</li>
+      <li>Use <code>color</code> for text colors</li>
+      <li>Use <code>font-family</code> for text fonts</li>
+      <li>Use <code>font-size</code> for text sizes</li>
+      <li>Use <code>text-align</code> for text alignment</li>
+    </ul>
+  </main>
+  <footer>
+    <a href="c7.html" class="button">&larr; Previous</a>
+    <a href="c9.html" class="button">Next &rarr;</a>
+  </footer>
+  <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="J1POj-Ll-bIBe4ATM6G7V";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+      </script>
+</body>
+</html>
